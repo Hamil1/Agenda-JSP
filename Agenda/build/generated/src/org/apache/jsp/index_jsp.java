@@ -53,17 +53,17 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    <head>\n");
       out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
       out.write("        <!-- Latest compiled and minified CSS -->\n");
-      out.write("<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\">\n");
-      out.write("<link rel=\"stylesheet\" type=\"text/css\" href=\"font-awesome-4.7.0\\css\\font-awesome.min.css\">\n");
-      out.write("<link rel=\"stylesheet\" type=\"text/css\" href=\"sweetalert-master/dist/sweetalert.css\">\n");
-      out.write("<link rel=\"stylesheet\" type=\"text/css\" href=\"Style.css\">\n");
       out.write("\n");
       out.write("\n");
-      out.write("<!--JavaScript-->\n");
-      out.write("<script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js\"></script>\n");
-      out.write("<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js\"></script>\n");
-      out.write("<script type=\"text/javascript\" src=\"sweetalert-master/dist/sweetalert.min.js\"></script>\n");
-      out.write("<script type=\"text/javascript\" src=\"Script.js\"></script>\n");
+      out.write("        <script src=\"sweetalert-master/dist/sweetalert.min.js\"></script>\n");
+      out.write("\t<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js\"></script>\n");
+      out.write("\t<script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js\"></script>\n");
+      out.write("        <script src=\"Script.js\"></script>\n");
+      out.write("\n");
+      out.write("        <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\">\n");
+      out.write("\t<link rel=\"stylesheet\" type=\"text/css\" href=\"font-awesome-4.7.0\\css\\font-awesome.min.css\">\n");
+      out.write("        <link rel=\"stylesheet\" type=\"text/css\" href=\"sweetalert-master/dist/sweetalert.css\">\n");
+      out.write("        <link rel=\"stylesheet\" type=\"text/css\" href=\"Style.css\">\n");
       out.write("\n");
       out.write("\n");
       out.write("                \n");
@@ -77,10 +77,8 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("</style>\n");
       out.write("    </head>\n");
       out.write("    <body>\n");
-      out.write("        <div class=\"jumbotron\">\n");
-      out.write("            <h1 id=\"jsptitle\">Agenda - JSP</h1>\n");
-      out.write("        </div>\n");
-      out.write("        <table class=\"table table-bordered\" id=\"tabla\">\n");
+      out.write("        \n");
+      out.write("        <table class=\"table table-hover table-bordered table-striped\">\n");
       out.write("        \n");
       out.write("            <!--Titulos-->\n");
       out.write("            <tr>\n");
@@ -90,7 +88,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
             
             for(Agenda agenda: agendadao.getAll()){
       out.write("\n");
-      out.write("            <th class=\"titulopink\">");
+      out.write("            <th class=\"registroslightgrey\">");
       out.print(agenda.getTitulo());
       out.write("</th>\n");
       out.write("           ");
@@ -106,7 +104,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
                 
       out.write("\n");
       out.write("                    \n");
-      out.write("                <tr class=\"registroslightgrey\"> \n");
+      out.write("                <tr> \n");
       out.write("                       <td ><strong>");
       out.print(agenda.getId());
       out.write("</strong></td>\n");
@@ -140,14 +138,17 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        \n");
       out.write("        </table>\n");
       out.write("        \t\t<button class=\"btn btn-default\" style=\"margin-left: 3px; width: 80px;\" id=\"guardar\">  <i data-toggle=\"tooltip\" title=\"Guardar\" class=\"fa fa-floppy-o fa-1x\" aria-hidden=\"true\"></i></button>\n");
-      out.write("                        <button type=\"button\" class=\"btn btn-default\" style=\"margin-left: 3px;  width: 88px;\" data-toggle=\"modal\" data-target=\"#myModal\">\t<i data-toggle=\"tooltip\" title=\"Agregar\" class=\"fa fa-plus fa-1x\" aria-hidden=\"true\"></i></button>\n");
-      out.write("                        \n");
-      out.write("                        <div id=\"myModal\" class=\"modal fade\" role=\"dialog\">\n");
+      out.write("\n");
+      out.write("\t\t<button type=\"button\" class=\"btn btn-default\" style=\"margin-left: 3px;  width: 88px;\" data-toggle=\"modal\" data-target=\"#myModal\">\t<i data-toggle=\"tooltip\" title=\"Agregar\" class=\"fa fa-plus fa-1x\" aria-hidden=\"true\"></i></button>\n");
+      out.write("\t\t\n");
+      out.write("\t\t\n");
+      out.write("\t\t\n");
+      out.write("\t\t\t<div id=\"myModal\" class=\"modal fade\" role=\"dialog\">\n");
       out.write("  \t\t\t\t<div class=\"modal-dialog\">\n");
       out.write("\n");
       out.write("    <!-- Modal content-->\n");
       out.write("    \t\t\t\t<div class=\"modal-content\">\n");
-      out.write("      \t\t\t\t\t<div class=\"modal-header\">\n");
+      out.write("      \t\t\t\t\t<div class=\"modal-header\" >\n");
       out.write("       \t\t\t\t\t\t<button type=\"button\" class=\"sr-only\" data-dismiss=\"modal\">&times;</button>\n");
       out.write("       \t\t\t\t\t\t<h4 class=\"modal-title\" style=\"color: rgb(95, 90, 90);\">Agregar</h4>\n");
       out.write("      \t\t\t\t    </div>\n");
@@ -169,7 +170,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("      \t\t\t\t\t</div>\n");
       out.write("      \t\t\t\t\t<div class=\"modal-footer\" style=\"border: 0;    margin-bottom: -8px; margin-right: -2px;\">\n");
       out.write("      \t\t\t\t\t\t<button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\" style=\"background-color:rgb(113, 188, 222);color:white;\">Guardar</button>\n");
-      out.write("        \t\t\t\t\t<button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\" style=\"background-color:rgb(216, 92, 92);color:white;\">Cerrar</button>\n");
+      out.write("        \t\t\t\t\t<button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\" style=\"background-color:rgb(247, 81, 81);color:white;\">Cerrar</button>\n");
       out.write("        \t\t\t\t\t\n");
       out.write("      \t\t\t\t\t</div>\n");
       out.write("    \t\t\t\t</div>\n");

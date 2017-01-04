@@ -56,13 +56,13 @@ table, th, td {
                 %>
                     
                 <tr> 
-                       <td ><strong><%=agenda.getId()%></strong></td>
-                       <td contenteditable='true'><strong><%=agenda.getNombre() %></strong></td>
-                       <td contenteditable='true'><strong><%=agenda.getApellido() %></strong></td>
-                       <td contenteditable='true'><strong><%=agenda.getTelefono1() %></strong></td>
-                       <td contenteditable='true'><strong><%=agenda.getTelefono2() %></strong></td>
-                       <td contenteditable='true'><strong><%=agenda.getDireccion() %></strong></td>
-                       <td contenteditable='true'><strong><%=agenda.getCorreo() %></strong></td>
+                       <td ><%=agenda.getId()%></td>
+                       <td contenteditable='true'><%=agenda.getNombre() %></strong></td>
+                       <td contenteditable='true'><%=agenda.getApellido() %></strong></td>
+                       <td contenteditable='true'><%=agenda.getTelefono1() %></strong></td>
+                       <td contenteditable='true'><%=agenda.getTelefono2() %></strong></td>
+                       <td contenteditable='true'><%=agenda.getDireccion() %></strong></td>
+                       <td contenteditable='true'><%=agenda.getCorreo() %></strong></td>
                        
                        
                    </tr>
