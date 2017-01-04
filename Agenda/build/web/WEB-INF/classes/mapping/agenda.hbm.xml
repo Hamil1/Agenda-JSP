@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+    <class table="agenda" name="model.Agenda">
+        <id name="id" column="id">
+            <generator class="native"/>
+        </id>
+        <property name="nombre" column="nombre"/>
+        <property name="apellido" column="apellido"/>
+        <property name="telefono1" column="telefono1"/>
+        <property name="telefono2" column="telefono2"/>
+        <property name="direccion" column="direccion"/>
+        <property name="correo" column="correo"/>
+        <property name="titulo" column="titulo"/>
+    </class>
+
+</hibernate-mapping>
