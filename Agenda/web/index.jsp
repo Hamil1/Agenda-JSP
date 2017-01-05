@@ -37,7 +37,7 @@ table, th, td {
     </head>
     <body>
         
-        <table class="table table-hover table-bordered table-striped">
+        <table class="table table-hover table-bordered">
         
             <!--Titulos-->
             <tr>
