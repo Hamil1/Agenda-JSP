@@ -16,4 +16,11 @@ function(){
   swal("Guardado!", "Sus cambios fueron grabados correctamente.", "success");
 });
     });
+    
+    $('#agregar').click(function(){
+        $('#myModal').modal('toggle');
+    });
+    
+    
+    
 });

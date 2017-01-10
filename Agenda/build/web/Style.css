@@ -1,4 +1,32 @@
+#guardar{
+    margin-left: 3px; 
+    width: 80px;
+}
 
+#agregar{
+    margin-left: 3px;  
+    width: 88px;
+}
+
+#savebutton{
+    color:black;
+}
+
+#savebutton:hover{
+    color:#103c6c;
+}
+
+
+#editbutton{
+    border: none;
+    background-color: transparent;
+}
+
+
+.hipervinculo{
+    text-decoration: none !important;
+    color: black;
+}
 
 #jsptitle{
     margin-left: 35%;
